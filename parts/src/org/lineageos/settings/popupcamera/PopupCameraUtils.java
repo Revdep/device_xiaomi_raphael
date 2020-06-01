@@ -26,6 +26,7 @@ public class PopupCameraUtils {
     private static final boolean DEBUG = false;
 
     public static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, PopupCameraService.class), UserHandle.CURRENT);
+        context.startServiceAsUser(new Intent(context, PopupCameraService.class),
+                UserHandle.CURRENT);
     }
 }

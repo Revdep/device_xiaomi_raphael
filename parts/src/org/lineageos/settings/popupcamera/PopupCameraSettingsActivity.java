@@ -28,7 +28,7 @@ public class PopupCameraSettingsActivity extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getFragmentManager().beginTransaction()
-                .replace(android.R.id.content, new PopupCameraSettingsFragment(), TAG_POPUPCAMERA).commit();
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
+                new PopupCameraSettingsFragment(), TAG_POPUPCAMERA).commit();
     }
 }
