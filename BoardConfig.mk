@@ -190,7 +190,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 USE_SENSOR_MULTI_HAL := true
 
 # Sepolicy
-include device/pixeldust/sepolicy/qcom/sepolicy.mk
+#include device/pixeldust/sepolicy/qcom/sepolicy.mk
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
