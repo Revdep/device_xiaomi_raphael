@@ -688,4 +688,7 @@
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
+
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_needCustomFODView">true</bool>
 </resources>
