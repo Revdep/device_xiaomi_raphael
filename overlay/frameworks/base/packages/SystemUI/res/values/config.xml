@@ -27,7 +27,7 @@
     
   
     <!-- Color of the FOD view -->
-    <color name="config_fodColor">#00ffffff</color>
+    <color name="config_fodColor">#57FEFF</color>
 
 
     <!-- Max visible notification icons -->
