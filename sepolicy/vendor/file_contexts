@@ -4,6 +4,11 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                       u:object_r:camera_persist_file:s0
 
+# Display
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                                u:object_r:sysfs_dm:s0
+/sys/class/drm/card0-DSI-1/disp_param                                                                  u:object_r:sysfs_graphics:s0
+/sys/class/backlight/panel0-backlight/brightness                                                       u:object_r:sysfs_graphics:s0
+
 # Fingerprint
 /dev/goodix_fp                                                                                         u:object_r:fingerprint_device:s0
 /data/vendor/goodix(/.*)?                                                                              u:object_r:fingerprint_data_file:s0
@@ -15,17 +20,17 @@
 # HALs
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_msmnile                                   u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power@1\.2-service\.xiaomi_msmnile                                   u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_raphael             u:object_r:hal_lineage_fod_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.xiaomi_raphael          u:object_r:hal_lineage_fod_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service                                             u:object_r:hal_lineage_camera_motor_default_exec:s0
 
-# Mlipay
-/vendor/bin/mlipayd@1\.1                                                                               u:object_r:hal_mlipay_default_exec:s0
-
-# Motor
+# Camera Motor
 /dev/akm09970                                                                                          u:object_r:akm09970_device:s0
 /dev/drv8846_dev                                                                                       u:object_r:drv8846_device:s0
 /sys/class/leds/blue/brightness                                                                        u:object_r:sysfs_oem:s0
 /sys/class/leds/green/brightness                                                                       u:object_r:sysfs_oem:s0
+
+# Mlipay
+/vendor/bin/mlipayd@1\.1                                                                               u:object_r:hal_mlipay_default_exec:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                                                            u:object_r:remosaic_daemon_exec:s0
@@ -38,5 +43,5 @@
 /vendor/bin/wifi-mac-generator                                                                         u:object_r:wifi-mac-generator_exec:s0
 
 # Xiaomi thermal daemon
-/vendor/bin/mi_thermald		                                                                       u:object_r:mi_thermald_exec:s0
+/vendor/bin/mi_thermald		                                                                           u:object_r:mi_thermald_exec:s0
 /data/vendor/thermal(/.*)?                                                                             u:object_r:thermal_data_file:s0
