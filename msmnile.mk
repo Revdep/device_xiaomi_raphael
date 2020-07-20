@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_raphael
 
 PRODUCT_COPY_FILES += \
-    vendor/lineage/configs/permissions/vendor.p404.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.p404.biometrics.fingerprint.inscreen.xml
+    vendor/lineage/configs/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
