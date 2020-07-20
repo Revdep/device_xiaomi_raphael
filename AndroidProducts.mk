@@ -13,4 +13,11 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/p404_raphael.mk
+    $(LOCAL_DIR)/du_raphael.mk
+    
+    
+
+COMMON_LUNCH_CHOICES := \
+    du_raphael-user \
+    du_raphael-userdebug \
+    du_raphael-eng
