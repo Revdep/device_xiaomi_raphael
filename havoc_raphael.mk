@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/raphael/msmnile.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/havoc/configs/common.mk)
+$(call inherit-product, vendor/havoc/configs/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
