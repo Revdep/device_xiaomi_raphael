@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_raphael.mk
+    $(LOCAL_DIR)/pixeldust_raphael.mk
