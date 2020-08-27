@@ -31,5 +31,11 @@
          3 = right side
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
+    
+        <!-- If device supports battery health options -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batChargeCycle">path</string>
+    <string name="config_batDesCap">path</string>
+    <string name="config_batCurCap">path</string>
 
 </resources>
