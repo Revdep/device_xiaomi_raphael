@@ -25,7 +25,8 @@ import androidx.preference.PreferenceFragment;
 
 import org.lineageos.settings.R;
 
-public class PopupCameraSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener {
+public class PopupCameraSettingsFragment extends PreferenceFragment implements
+        OnPreferenceChangeListener {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
