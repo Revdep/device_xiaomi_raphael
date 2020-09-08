@@ -19,6 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+#faceunlock-patch
+$(call inherit-product-if-exists, external/motorola/faceunlock/faceunlock.mk)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -31,6 +34,12 @@ $(call inherit-product-if-exists, vendor/xiaomi/raphael/raphael-vendor.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+    
+#Soong
+PRODUCT_BOARD_PLATFORM := msmnile
+PRODUCT_USES_QCOM_HARDWARE := true
+    
+    
 
 # Hardware
 PRODUCT_COPY_FILES += \
